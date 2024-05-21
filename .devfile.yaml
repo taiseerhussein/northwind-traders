@@ -1,12 +1,10 @@
 schemaVersion: 2.2.0
 metadata:
-  generateName: northwind-traders
-attributes:
-  controller.devfile.io/storage-type: ephemeral
+  name: northwind-traders
 components:
   - name: tools
     container:
-      image: quay.io/devfile/universal-developer-image:ubi8-latest
+      image: quay.io/devspaces/udi-rhel8:3.14
       env:
         - name: QUARKUS_HTTP_HOST
           value: 0.0.0.0
